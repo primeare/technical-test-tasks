@@ -28,6 +28,12 @@ npm start
 
 Server will run on http://localhost on port 3000 by default.
 
+To start HTTP server on specific host and/or port use environment variables `HOST` and `PORT`:
+
+```sh
+PORT=3333 npm start
+```
+
 ## Test
 
 To run linter checks type in command line:
