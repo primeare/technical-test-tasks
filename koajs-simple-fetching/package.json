@@ -1,0 +1,43 @@
+{
+  "name": "koajs-simple-fetching",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Koa.js simple Node.js application with fetching data from external resources and two endpoints",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "start-production": "NODE_ENV=production node app.js",
+    "lint": "eslint .",
+    "doc": "jsdoc -c config/jsdoc.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/primeare/technical-test-tasks.git"
+  },
+  "keywords": [
+    "koajs",
+    "fetch",
+    "test"
+  ],
+  "author": {
+    "name": "Vladyslav Dukhin",
+    "email": "vladyslav.dukhin@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/primeare/technical-test-tasks/issues"
+  },
+  "homepage": "https://github.com/primeare/technical-test-tasks#readme",
+  "dependencies": {
+    "config": "^3.0.1",
+    "koa": "^2.7.0",
+    "koa-body": "^4.0.7",
+    "request": "^2.88.0",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.12.1",
+    "jsdoc": "^3.5.5",
+    "postman-jsdoc-theme": "0.0.3"
+  }
+}

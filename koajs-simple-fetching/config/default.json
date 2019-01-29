@@ -1,0 +1,21 @@
+{
+  "server": {
+    "host": "localhost",
+    "port": "3000"
+  },
+  "logging": {
+    "console": {
+      "level": "silly",
+      "handleExceptions": true,
+      "json": false,
+      "colorize": true
+    }
+  },
+  "business": {
+    "mixin": {
+      "min": 1,
+      "max": 6
+    },
+    "externalResourceURL": "https://jsonplaceholder.typicode.com/todos"
+  }
+}
