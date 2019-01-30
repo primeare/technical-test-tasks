@@ -1,0 +1,47 @@
+{
+  "db": {
+    "dialect": "mysql",
+    "host": "localhost",
+    "database": "test",
+    "username": "root",
+    "password": "password",
+    "operatorsAliases": false,
+    "benchmark": true,
+    "native": false,
+    "typeValidation": true,
+    "timezone": "+00:00",
+    "pool": {
+      "max": 25,
+      "min": 1,
+      "acquire": 10000,
+      "idle": 10000,
+      "evict": 10000
+    },
+    "define": {
+      "acquire": "utf8",
+      "collate": "utf8_general_ci",
+      "version": true,
+      "timestamps": true,
+      "paranoid": false,
+      "freezeTableName": true
+    },
+    "dropDatabase": true
+  },
+  "server": {
+    "host": "localhost",
+    "port": 3333
+  },
+  "readDirOptions": {
+    "encoding": "utf8",
+    "withFileTypes": true
+  },
+  "logging": {
+    "requestLoggerType": "dev",
+    "console": {
+      "level": "silly",
+      "handleExceptions": true,
+      "json": false,
+      "colorize": true
+    }
+  }
+}

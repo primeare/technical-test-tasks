@@ -1,0 +1,66 @@
+{
+  "name": "softindex-test-task",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Test task for position of Node.js Software Engineer",
+  "main": "bin/server.js",
+  "scripts": {
+    "start": "node ./bin/server.js",
+    "lint": "eslint .",
+    "test": "jest",
+    "code-doc": "jsdoc -c config/jsdoc.js",
+    "api-doc": "apidoc -i components/ -o docs/api",
+    "doc": "npm run api-doc && npm run code-doc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/primeare/softindex-test-task.git"
+  },
+  "keywords": [
+    "test",
+    "task",
+    "softindex",
+    "nodejs",
+    "voting"
+  ],
+  "apidoc": {
+    "name": "SoftIndex Node.js Test Application Task",
+    "description": "A voting Node.js test application",
+    "version": "1.0.0",
+    "title": "SoftIndex Node.js Test Task",
+    "template": {
+      "forceLanguage": "en"
+    }
+  },
+  "author": {
+    "name": "Vladyslav Dukhin",
+    "email": "vladyslav.dukhin@gmail.com",
+    "url": "https://github.com/primeare"
+  },
+  "directories": {
+    "lib": "lib",
+    "bin": "bin",
+    "doc": "docs"
+  },
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/primeare/softindex-test-task/issues"
+  },
+  "homepage": "https://github.com/primeare/softindex-test-task#readme",
+  "dependencies": {
+    "config": "^3.0.1",
+    "express": "^4.16.4",
+    "helmet": "^3.15.0",
+    "morgan": "^1.9.1",
+    "mysql2": "^1.6.4",
+    "sequelize": "^4.42.0",
+    "winston": "^3.1.0"
+  },
+  "devDependencies": {
+    "apidoc": "^0.17.7",
+    "eslint": "^5.12.1",
+    "jest": "^23.6.0",
+    "jsdoc": "^3.5.5",
+    "postman-jsdoc-theme": "0.0.3"
+  }
+}
