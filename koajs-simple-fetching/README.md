@@ -5,7 +5,7 @@
 1. Implement API endpoint that enhance provided JSON object with additional random-valued parameter. Value varies between 1 and 6.
   - When JSON object with command `shutdown` is provided, server should terminate with exit code 2.
   - Service must use as little resources as possible.
-2. Implement API endpoint that fetches data from external API end returns result of that fetch.
+2. Implement API endpoint that fetches data from external API and returns result of that fetch.
   - Service needs to be able to serve fetched responses of any size.
 
 ## Install

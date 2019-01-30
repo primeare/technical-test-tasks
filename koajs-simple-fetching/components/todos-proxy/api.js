@@ -12,7 +12,7 @@ const API_REG_EXP = /^\/api\/todos\/?([0-9]*)$/;
  * @returns {Promise} void
  */
 module.exports = async (ctx, next) => {
-  if (ctx.method !== 'POST') return void next();
+  if (ctx.method !== 'GET') return void next();
   const matches = ctx.path.match(API_REG_EXP);
   if (matches == null || matches.length === 0) return void next();
   const id = matches[1];
