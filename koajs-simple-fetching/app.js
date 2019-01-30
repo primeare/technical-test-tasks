@@ -16,7 +16,7 @@ const proxyApi = require('./components/todos-proxy/api');
 // body parser
 app.use(koaBody());
 
-app.use(async (ctx, next) => {
+app.use((ctx, next) => {
   const body = ctx.request.body;
   logger.info(`${ctx.method} ${ctx.path} - ${JSON.stringify(body)}`);
   next();
