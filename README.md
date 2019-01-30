@@ -3,3 +3,11 @@
 > The more you know, the less you fear
 
 ## Directories and Tasks
+
+* `express-voting-service`
+
+  Simple voting application with CRU API operations. More task details in [README](express-voting-service/README.md).
+
+* `koajs-simple-fetching`
+
+  Simple Koa.js application with fetching data from an external API and graceful server shutdown. More task details in [README](koajs-simple-fetching/README.md).

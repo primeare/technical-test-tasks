@@ -1,6 +1,62 @@
-# SoftIndex Node.js Voting Test Task [![code with hearth](https://img.shields.io/badge/Code_with_%E2%9D%A4-by_Vladyslav_Dukhin-blue.svg?style=flat-square)](https://github.com/primeare)
+# Express.js Voting Application
 
 > The more you know, the less you fear
+
+## Task
+
+Implement REST API for voting service with the use of Express.js and MySQL.
+In case of unexpected errors - return `500 Internal Server Error`.
+
+### API Endpoints
+
+* `POST /themes`
+
+  Request:
+
+  ```json
+  {
+    "name": "string"
+  }
+  ```
+
+  Success Response:
+
+  ```json
+  {
+    "error": null,
+    "themeId": "number"
+  }
+  ```
+
+  Error Response (Validation error):
+
+  ```json
+  {
+    "error": "Field name length cannot be grater than 1024"
+  }
+  ```
+
+* `GET /themes/{themeId}`
+
+  Response:
+
+  ```json
+  {
+    "name": "string",
+    "votes": {
+      "yes": "number",
+      "no": "number"
+    }
+  }
+  ```
+
+* `POST /themes/{themeId}/yes`
+
+  Response: `OK`
+
+* `POST /themes/{themeId}/no`
+
+  Response: `OK`
 
 ## Install
 ```sh
